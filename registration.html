@@ -283,7 +283,7 @@
                 <a href="about.html">About</a></li>
             <li>
                 <a href="Contact.html">Contact</a></li>
-                <li>
+            <li>
                 <a href="Result.html">Yearly Result</a></li>
 
         </ul>
@@ -329,7 +329,7 @@ app.controller('myCtrl', function($scope,$http) {
                // $http.defaults.headers.common['x-access-token'] = localStorage.getItem('token');
 var valid = true
 var valid1 = true
-var valid2= true
+var valid2 = true
 var valid3 = true
 var valid4 = true
 var valid5 = true
@@ -353,7 +353,6 @@ var valid7 = true
                 var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 return re.test(email);
             }
-
 if($scope.contact_no === undefined){
    
  valid1 = false
@@ -439,7 +438,7 @@ dobyear:$scope.dobyear
 //alert(parameter)
 
 /*$http.post('http://localhost:3000/registerdata', parameter).then(function(success) {*/
-$http.post('http://mpba.herokuapp.com/registerdata', parameter).then(function(success) {
+$http.post('https://mpba.herokuapp.com/registerdata', parameter).then(function(success) {
     mpba.herokuapp.com
    $scope.info = success.data.status
   // / console.log(success)
