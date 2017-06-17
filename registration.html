@@ -438,7 +438,7 @@ dobyear:$scope.dobyear
 //alert(parameter)
 
 /*$http.post('http://localhost:3000/registerdata', parameter).then(function(success) {*/
-$http.post('mpba.herokuapp.com/registerdata', parameter).then(function(success) {
+$http.post('http://www.mpba.herokuapp.com/registerdata', parameter).then(function(success) {
     mpba.herokuapp.com
    $scope.info = success.data.status
   // / console.log(success)
